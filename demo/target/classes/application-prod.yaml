@@ -7,3 +7,7 @@ spring:
     username: ${DB_USERNAME:postgres}
     password: ${DB_PASSWORD:secret}
     driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      # in real production use flyway to create schema and change this "validate"
+      ddl-auto: update
