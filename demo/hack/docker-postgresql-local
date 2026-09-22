@@ -1,0 +1,6 @@
+docker run -d --name postgres-db \
+  --network demo-net \
+  -e POSTGRES_DB=demodb \
+  -e POSTGRES_USER=postgres \
+  -e POSTGRES_PASSWORD=secret \
+  postgres:16-alpine

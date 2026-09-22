@@ -1,0 +1,2 @@
+docker stop postgres-db && docker rm postgres-db
+docker network rm demo-net

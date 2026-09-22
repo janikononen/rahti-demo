@@ -1,0 +1,10 @@
+docker run --rm \
+  --network demo-net \
+  -p 8080:8080 \
+  -e SPRING_PROFILES_ACTIVE=prod \
+  -e DB_HOST=postgres-db \
+  -e DB_PORT=5432 \
+  -e DB_NAME=demodb \
+  -e DB_USERNAME=postgres \
+  -e DB_PASSWORD=secret \
+  rahti-demo:latest
