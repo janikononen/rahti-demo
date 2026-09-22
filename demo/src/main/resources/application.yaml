@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: rahti-demo
+  profiles:
+    default: dev

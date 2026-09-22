@@ -1,0 +1,8 @@
+/home/jani/git/rahti-demo/demo/src/main/java/com/example/domain/user/UserMapper.java
+/home/jani/git/rahti-demo/demo/src/main/java/com/example/domain/user/UserController.java
+/home/jani/git/rahti-demo/demo/src/main/java/com/example/Main.java
+/home/jani/git/rahti-demo/demo/src/main/java/com/example/domain/user/UserService.java
+/home/jani/git/rahti-demo/demo/src/main/java/com/example/domain/user/dto/UserResponse.java
+/home/jani/git/rahti-demo/demo/src/main/java/com/example/domain/user/User.java
+/home/jani/git/rahti-demo/demo/src/main/java/com/example/domain/user/dto/UserRequest.java
+/home/jani/git/rahti-demo/demo/src/main/java/com/example/domain/user/UserRepository.java
