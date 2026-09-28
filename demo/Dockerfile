@@ -4,12 +4,14 @@ FROM docker.io/maven:3.9.12-eclipse-temurin-25-noble AS builder
 WORKDIR /tmp
 
 # copy pom download dependencies from cache 
-COPY ./pom.xml .
-RUN mvn dependency:go-offline -B
+COPY .mvn/ .mvn
+COPY mvnw pom.xml ./
+RUN chmod +x ./mvnw
+RUN ./mvnw dependency:go-offline
 
 # copy sourcecode and compile
 COPY ./src ./src
-RUN mvn clean package -DskipTests
+RUN ./mvnw clean install -DskipTests 
 
 
 # Stage 2: Production image
@@ -20,5 +22,4 @@ COPY --from=builder /tmp/target/*.jar /app.jar
 
 EXPOSE 8080
 
-# Start application with prod -profile
-ENTRYPOINT ["java", "-Dspring.profiles.active=prod", "-jar", "/app.jar"]
+ENTRYPOINT ["java", "-jar", "/app.jar"]
