@@ -94,6 +94,10 @@ Tuotantoympäristössä sovelluksen ajo perustuu CSC:n Rahti-konttialustaan ja P
 3. **Konfigurointi ympäristömuuttujilla:** Backend-kontti käynnistetään Rahdissa ja sille annetaan tarvittavat ympäristömuuttujat (kuten tietokantatunnukset ja aktiivinen Spring-profiili).
 4. **Pukki-tietokanta:** Tietokantana toimii Pukki-palvelun hallinnoitu PostgreSQL-kanta. Pukkiin määritellään sallitut verkko-osoitteet (_Allowed URL / IP_), jotta vain Rahdissa pyörivä backend pääsee käsiksi tietokantaan.
 
+#### Muuta
+
+Pukki tietokannan Allowed CIDR: 86.50.229.150/32
+
 ---
 
 ## Ympäristömuuttujat (Environment Variables)
