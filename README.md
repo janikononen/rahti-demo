@@ -126,7 +126,6 @@ Sovelluksessa on määritelty eri profiilit eri ajotilanteita varten:
 | `DB_NAME`                | Tietokannan nimi                        | `demodb`                         | `demodb`                  |
 | `DB_USERNAME`            | Tietokannan käyttäjätunnus              | `postgres`                       | `pukki_kayttaja`          |
 | `DB_PASSWORD`            | Tietokannan salasana                    | `secret`                         | _(Salainen salasana)_     |
-| `DB_URL`                 | _(Valinnainen)_ Täysi JDBC-yhteysosoite | `jdbc:postgresql://...`          | `jdbc:postgresql://...`   |
 
 ### Miksi ympäristömuuttujia käytetään?
 
