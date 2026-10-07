@@ -122,7 +122,6 @@ The application defines different profiles for various environments:
 | `DB_NAME`                | Database name                         | `demodb`                  | `demodb`                |
 | `DB_USERNAME`            | Database username                     | `postgres`                | `pukki_username`        |
 | `DB_PASSWORD`            | Database password                     | `secret`                  | _(Secret password)_     |
-| `DB_URL`                 | _(Optional)_ Full JDBC connection URL | `jdbc:postgresql://...`   | `jdbc:postgresql://...` |
 
 ### Why Use Environment Variables?
 
